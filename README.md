@@ -17,15 +17,15 @@
 _Конфиг для авторизации по ключу:_
 ```
 hosts:
-  - { "ip": 10.228.14.88, "port": 22, "hostname": "ROUTER-1" }
-  - { "ip": 10.228.14.99, "port": 22, "hostname": "ROUTER-2" }
+  - { "ip": 10.123.12.34, "port": 22, "hostname": "ROUTER-1" }
+  - { "ip": 10.123.12.35, "port": 22, "hostname": "ROUTER-2" }
 username: "user"
 ```
 
 _Для авторизации по кредам:_
 ```
 hosts:
-  - { "ip": 10.228.14.88, "port": 22, "hostname": "ROUTER-1" }
+  - { "ip": 10.123.12.34, "port": 22, "hostname": "ROUTER-1" }
 username: "user"
 password: "password"
 ```
@@ -36,7 +36,7 @@ password: "password"
 ```
 # переменная dir
 hosts:
-  - { "ip": 10.228.14.88, "port": 22, "hostname": "ROUTER-1", dir: "My-ELTEX-dir" }
+  - { "ip": 10.123.12.34, "port": 22, "hostname": "ROUTER-1", dir: "My-ELTEX-dir" }
 ```
 Рабочая директория:
 ```
@@ -44,7 +44,7 @@ working_dir: "/srv/eltex_backups"
 ```
 Пауза в секундах между запросами к оборудованию:
 ```
-delay: 228
+delay: 123
 ```
 
 ## ToDo
