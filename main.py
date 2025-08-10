@@ -43,7 +43,7 @@ def print_err(str):
     print(f"{error_color}[ERROR]: {str}{reset_color}")
 
 def print_fatal(str):
-    print(f"${fatal_color}[FATAL]: {str} Aborting...${reset_color}")
+    print(f"{fatal_color}[FATAL]: {str} Aborting...{reset_color}")
     exit(1)
 
 parser = argparse.ArgumentParser()
@@ -168,9 +168,7 @@ while True:
                 print_info("No changes in config.")
                 sleep(delay)
                 continue
-            
-        #hostname = host["hostname"]
-    
+
         with open(f"{conf_path}", "w") as conf:
             conf.write(decoded_stdout)
         conf.close()
